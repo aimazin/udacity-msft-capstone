@@ -27,7 +27,8 @@ The data will be accessed by uploading and registering the dataset in the Azure 
 ### Results
 *TODO*: What are the results you got with your automated ML model? What were the parameters of the model? How could you have improved it?
 
-*TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
+![](forpub/automldets.png)
+![](forpub/automlmod.png)
 
 ## Hyperparameter Tuning
 *TODO*: What kind of model did you choose for this experiment and why? Give an overview of the types of parameters and their ranges used for the hyperparameter search
@@ -35,7 +36,8 @@ The data will be accessed by uploading and registering the dataset in the Azure 
 ### Results
 *TODO*: What are the results you got with your model? What were the parameters of the model? How could you have improved it?
 
-*TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
+![](forpub/hyptundets.png)
+![](forpub/hyptunmod.png)
 
 ## Model Deployment
 *TODO*: Give an overview of the deployed model and instructions on how to query the endpoint with a sample input.
