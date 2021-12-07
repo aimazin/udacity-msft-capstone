@@ -22,31 +22,37 @@ The task is to predict the closing price "Close" and in AutoML the dates in "Col
 The data will be accessed by uploading and registering the dataset in the Azure ML Workspace.
 
 ## Automated ML
-*TODO*: Give an overview of the `automl` settings and configuration you used for this experiment
+
+Since we were time series forecasting I added the date column as a forecasting parameter and configured task to forecasting and prime metric to normalized-RMSE.
 
 ### Results
-*TODO*: What are the results you got with your automated ML model? What were the parameters of the model? How could you have improved it?
+
+It had an RMSE of about 10 carrying a best model of StandardScalerWrapper, ELasticNet. Could have adjusted parameters for experiment to run longer for more models.
 
 ![](forpub/automldets.png)
 ![](forpub/automlmod.png)
 
 ## Hyperparameter Tuning
-*TODO*: What kind of model did you choose for this experiment and why? Give an overview of the types of parameters and their ranges used for the hyperparameter search
+
+Well I used scikit-learns MLPRegressor because I thought a neuro network vs an automl would be exciting. The hyperparameters were max_iter between 100 and 1000, and epsilon between 0.0000001 and 1.0 these using a Bandit policy, Trying to minimize RMSE.
 
 ### Results
-*TODO*: What are the results you got with your model? What were the parameters of the model? How could you have improved it?
+
+I got RMSE of less than 0.0 with hyperparameters of about 0.5 epsilon and 400 max_iter. Could have improved it by running more models only 25 were run and more hyperparameters.
 
 ![](forpub/hyptundets.png)
 ![](forpub/hyptunmod.png)
 
 ## Model Deployment
-*TODO*: Give an overview of the deployed model and instructions on how to query the endpoint with a sample input.
+
+The deployed model is from the best registered model from the hyperdrive experiment and was deployed using the score.py file. The endpoint was consumed first of all having the raw data be present to the site as json. The requests post is used to render a response from the json uri string and header for json applications.
 
 ## Screen Recording
-*TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
 - A working model
 - Demo of the deployed  model
 - Demo of a sample request sent to the endpoint and its response
+
+Link to a screen recording of the project in action: https://youtu.be/go4j4VXhTZw
 
 ## Standout Suggestions
 *TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
