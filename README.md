@@ -29,8 +29,8 @@ Since we were time series forecasting I added the date column as a forecasting p
 
 It had an RMSE of about 10 carrying a best model of StandardScalerWrapper, ELasticNet. Could have adjusted parameters for experiment to run longer for more models.
 
-![](forpub/automldets.png)
-![](forpub/automlmod.png)
+![](forpub/automldetsi.png)
+![](forpub/automlmodi.png)
 
 ## Hyperparameter Tuning
 
@@ -40,8 +40,8 @@ Well I used scikit-learns MLPRegressor because I thought a neuro network vs an a
 
 I got RMSE of less than 0.0 with hyperparameters of about 0.5 epsilon and 400 max_iter. Could have improved it by running more models only 25 were run and more hyperparameters.
 
-![](forpub/hyptundets.png)
-![](forpub/hyptunmod.png)
+![](forpub/hyptundetsi.png)
+![](forpub/hyptunmodi.png)
 
 ## Model Deployment
 
