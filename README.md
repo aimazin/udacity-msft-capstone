@@ -47,6 +47,8 @@ I got RMSE of less than 0.0 with hyperparameters of about 0.5 epsilon and 400 ma
 
 The deployed model is from the best registered model from the hyperdrive experiment and was deployed using the score.py file. The endpoint was consumed first of all having the raw data be present to the site as json. The requests post is used to render a response from the json uri string and header for json applications.
 
+![](forpub/endpoint.png)
+
 ## Screen Recording
 - A working model
 - Demo of the deployed  model
