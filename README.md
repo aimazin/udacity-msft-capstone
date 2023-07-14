@@ -1,8 +1,8 @@
-*NOTE:* This file is a template that you can use to create the README for your project. The *TODO* comments below will highlight the information you should be sure to include.
+
 
 # AutoML Time Series vs Neural Network
 
-This Project establishes the difference between the AutoMl Time Series and Scikit Learns Neural Net on time series data.
+This Project establishes the difference between the AutoMl Time Series and Scikit Learn's hypertuned Neural Net on time series data.
 
 ## Project Set Up and Installation
 *OPTIONAL:* If your project has any special installation steps, this is where you should put it. To turn this project into a professional portfolio project, you are encouraged to explain how to set up this project in AzureML.
