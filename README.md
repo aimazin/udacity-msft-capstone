@@ -58,3 +58,8 @@ Link to a screen recording of the project in action: https://youtu.be/go4j4VXhTZ
 
 ## Standout Suggestions
 *TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
+
+## License
+
+This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
+
